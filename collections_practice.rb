@@ -31,3 +31,13 @@ end
 def sum_array(array)
   array.inject(0) { |accumulator, number| accumulator + number}
 end
+
+def add_s(array)
+  array.collect { |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+  }
+end
